@@ -5,7 +5,7 @@ pipeline{
     stages{
       stage("buiding the image"){
         script{
-          sh "docker build -t new:1."
+          sh "docker build -t new:1 ."
         }
       
     }
