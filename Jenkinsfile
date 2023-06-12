@@ -1,10 +1,10 @@
 pipeline{
   agent {
-    label : "qwertyy"
+    label "qwertyy"
   }
     stages{
       stage("buiding the image"){
-        script{
+        steps{
           sh "docker build -t new:1 ."
         }
       
